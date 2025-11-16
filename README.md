@@ -22,7 +22,7 @@ PHP (PDO), MySQL, Apache/cPanel, HTML/CSS/JS.
 See `db/001_schema.sql` (users, submissions, admin_sheet, student_awards).
 
 ## Folder Structure
-assets/ # CSS, images
+assets/ # CSS, images <br>
 uploads/
 signed/ # student PDFs (gitignored)
 awards/ # admin PDFs (gitignored)
