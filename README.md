@@ -63,6 +63,7 @@ Student uploads are previewed on their dashboard (cache-busted), and admins see 
 * student_login.php
 * student_submit.php
 * login.php
+* logout.php
 * middleware.php
 * authenticate.php
 * utils.php
