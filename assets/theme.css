@@ -1,0 +1,76 @@
+/* ===== Davidson-inspired theme (red/black/white, serif headlines) ===== */
+:root{
+  --red:#C8102E; --red-dark:#9e0d24;
+  --black:#111215; --ink:#1f2937; --muted:#6b7280;
+  --paper:#ffffff; --paper-2:#f7f7f8; --line:#e5e7eb;
+  --focus: rgba(200,16,46,.25);
+}
+
+html,body{height:100%}
+body{
+  margin:0; color:#1a1a1a; background:var(--paper);
+  font:16px/1.5 "Source Sans 3", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Header */
+.site-header{border-bottom:1px solid var(--line); background:var(--paper)}
+.site-header .bar{max-width:1100px; margin:0 auto; padding:14px 20px; display:flex; align-items:center; justify-content:space-between}
+.brand{display:flex; align-items:baseline; gap:10px; text-decoration:none; color:var(--black)}
+.brand .mark{width:34px; height:34px; border:2px solid var(--red); color:var(--red); font-weight:800; display:grid; place-items:center; border-radius:4px}
+.brand .name{font-family:"Merriweather", Georgia, "Times New Roman", serif; font-weight:800; letter-spacing:.2px; font-size:20px}
+.site-nav a{color:var(--ink); text-decoration:none; margin-left:18px; font-weight:600}
+.site-nav a:hover{ color:var(--red) }
+
+/* Hero */
+.page-hero{background:linear-gradient(180deg,var(--red) 0%, #b50f28 100%); color:#fff; padding:28px 0; margin-bottom:20px}
+.page-hero .inner{max-width:1100px; margin:0 auto; padding:0 20px}
+.h1{font-family:"Merriweather", Georgia, "Times New Roman", serif; font-size:36px; line-height:1.2; margin:0}
+
+/* Shell */
+.container{ max-width:1100px; margin:0 auto; padding:0 20px 40px }
+
+/* Cards */
+.card{ background:var(--paper); border:1px solid var(--line); border-radius:12px; padding:18px; box-shadow:0 1px 2px rgba(0,0,0,.03) }
+.card + .card{ margin-top:16px }
+
+/* Forms */
+label{ display:block; font-weight:600; margin:12px 0 6px }
+input[type="email"],
+input[type="password"],
+input[type="text"],
+select{
+  width:100%;
+  max-width:100%;        /* was 420px */
+  display:block;
+  box-sizing:border-box; /* include padding in width */
+  padding:10px 12px;
+  border-radius:10px;
+  border:1px solid var(--line);
+  background:#fff;
+}
+input:focus, select:focus{ outline:0; border-color:var(--red); box-shadow:0 0 0 4px var(--focus) }
+input[type="file"]{ border:1px dashed var(--line); padding:10px; border-radius:10px; background:var(--paper-2) }
+
+/* Buttons */
+.actions > *{ margin-right:10px }
+.btn{ display:inline-flex; align-items:center; gap:8px; padding:10px 16px; border-radius:999px; border:1px solid var(--red); background:var(--red); color:#fff; font-weight:700; text-decoration:none; cursor:pointer }
+.btn:hover{ background:var(--red-dark); border-color:var(--red-dark) }
+.btn.ghost{ background:transparent; color:var(--red) }
+.btn.muted{ border-color:var(--line); color:var(--ink); background:var(--paper) }
+
+/* Tables */
+.table{ width:100%; border-collapse:collapse; font-size:15px }
+.table th, .table td{ border:1px solid var(--line); padding:10px; vertical-align:top }
+.table th{ background:var(--paper-2); text-align:left }
+
+.pill{ padding:3px 10px; border-radius:999px; font-size:12px; display:inline-block; border:1px solid var(--line) }
+.pill.accepted{ background:#eef8f1; border-color:#9cd3ae; color:#126a2a }
+.pill.declined{ background:#fff1ee; border-color:#f3b4a8; color:#9a3412 }
+.pill.none{ background:#f3f4f6; color:#6b7280 }
+
+/* Utils */
+.m0{margin:0} .mt12{margin-top:12px} .mt16{margin-top:16px}
+.small{ color: var(--muted); font-size:13px }
+
+/* Make subtext in the red hero white */
+.page-hero .small { color:#fff; } /* or rgba(255,255,255,.9) */
