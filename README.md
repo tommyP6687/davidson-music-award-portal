@@ -1,5 +1,4 @@
 # Music Awards Portal (LAMP/cPanel)
-
 Students accept/decline music award letters and upload signed PDFs; admins upload a roster CSV and download a status-enriched CSV.
 
 ## Tech
@@ -22,22 +21,23 @@ PHP (PDO), MySQL, Apache/cPanel, HTML/CSS/JS.
 See `db/001_schema.sql` (users, submissions, admin_sheet, student_awards).
 
 ## Folder Structure
-`assets/ # CSS, images <br>
-uploads/ <br>
-   signed/ # student PDFs (gitignored) <br>
-   sheets/ # admin CSVs (gitignored) <br> 
-db/ <br>
-   001_schema.sql # create tables <br> 
-admin_dashboard.php <br> 
-admin_login.php <br>
-admin_upload_handler.php <br>
-student_dashboard.php <br>
-student_submit.php <br>
-login.php <br>
-middleware.php <br>
-authenticate.php <br>
-utils.php <br>
-config.example.php`
+* assets/ # CSS, images
+* uploads/
+*    signed/ # student PDFs (gitignored)
+*    sheets/ # admin CSVs (gitignored)
+* db/
+*    001_schema.sql # create tables
+* admin_dashboard.php
+* admin_download_csv.php 
+* admin_login.php
+* student_dashboard.php
+* student_login.php
+* student_submit.php
+* login.php
+* middleware.php
+* authenticate.php
+* utils.php
+* config.example.php
 
 ## Deployment
 - Never commit `config.php` or real files in `uploads/`.
