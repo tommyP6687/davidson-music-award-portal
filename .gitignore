@@ -1,0 +1,25 @@
+# secrets
+config.php
+.env
+
+# uploads and generated files
+/uploads/*
+!/uploads/.gitkeep
+
+# logs & caches
+error_log
+*.log
+*.cache
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
+
+# dependencies (if you ever add them)
+vendor/
+node_modules/
+
+# IDE
+.vscode/
+.idea/
