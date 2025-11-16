@@ -23,10 +23,10 @@ See `db/001_schema.sql` (users, submissions, admin_sheet, student_awards).
 ## Folder Structure
 * assets/ # CSS, images
 * uploads/
-*    signed/ # student PDFs (gitignored)
-*    sheets/ # admin CSVs (gitignored)
+*       signed/ # student PDFs (gitignored)
+*       sheets/ # admin CSVs (gitignored)
 * db/
-*    001_schema.sql # create tables
+*       001_schema.sql # create tables
 * admin_dashboard.php
 * admin_download_csv.php 
 * admin_login.php
