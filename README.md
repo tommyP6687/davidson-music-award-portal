@@ -23,22 +23,22 @@ See `db/001_schema.sql` (users, submissions, admin_sheet, student_awards).
 
 ## Folder Structure
 assets/ # CSS, images <br>
-uploads/
-signed/ # student PDFs (gitignored)
-awards/ # admin PDFs (gitignored)
-sheets/ # admin CSVs (gitignored)
-db/
-001_schema.sql # create tables
-admin_dashboard.php
-admin_login.php
-admin_upload_handler.php
-student_dashboard.php
-student_submit.php
-login.php
-middleware.php
-authenticate.php
-utils.php
-config.example.php
+uploads/ <br>
+signed/ # student PDFs (gitignored) <br>
+awards/ # admin PDFs (gitignored) <br>
+sheets/ # admin CSVs (gitignored) <br>
+db/ <br>
+001_schema.sql # create tables <br>
+admin_dashboard.php <br>
+admin_login.php <br>
+admin_upload_handler.php <br>
+student_dashboard.php <br>
+student_submit.php <br>
+login.php <br>
+middleware.php <br>
+authenticate.php <br>
+utils.php <br>
+config.example.php 
 
 ## Deployment
 - Never commit `config.php` or real files in `uploads/`.
