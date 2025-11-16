@@ -90,3 +90,6 @@ See `db/001_schema.sql` for exact definitions.
 ## Deployment Notes
 - Never commit `config.php` or anything in `uploads/`
 - Add a `.gitignore`:
+
+## Example Site
+Link to website: ```https://musicawards.tpham.dcreate.domains/login.php```
