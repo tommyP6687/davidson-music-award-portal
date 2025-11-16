@@ -22,6 +22,7 @@ See `db/001_schema.sql` (users, submissions, admin_sheet, student_awards).
 
 ## Folder Structure
 * assets/ # CSS, images
+   * theme.css
 * uploads/
    * signed/ # student PDFs (gitignored)
    * sheets/ # admin CSVs (gitignored)
