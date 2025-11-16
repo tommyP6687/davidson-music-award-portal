@@ -22,12 +22,12 @@ PHP (PDO), MySQL, Apache/cPanel, HTML/CSS/JS.
 See `db/001_schema.sql` (users, submissions, admin_sheet, student_awards).
 
 ## Folder Structure
-assets/ # CSS, images <br>
+`assets/ # CSS, images <br>
 uploads/ <br>
-* signed/ # student PDFs (gitignored) <br>
-* sheets/ # admin CSVs (gitignored) <br> 
+   signed/ # student PDFs (gitignored) <br>
+   sheets/ # admin CSVs (gitignored) <br> 
 db/ <br>
-* 001_schema.sql # create tables <br> 
+   001_schema.sql # create tables <br> 
 admin_dashboard.php <br> 
 admin_login.php <br>
 admin_upload_handler.php <br>
@@ -37,7 +37,7 @@ login.php <br>
 middleware.php <br>
 authenticate.php <br>
 utils.php <br>
-config.example.php 
+config.example.php`
 
 ## Deployment
 - Never commit `config.php` or real files in `uploads/`.
